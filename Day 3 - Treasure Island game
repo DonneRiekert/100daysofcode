@@ -1,0 +1,30 @@
+print("Welcome to Treasure Island.")
+print("Your mission is to find the treasure.") 
+
+#https://www.draw.io/?lightbox=1&highlight=0000ff&edit=_blank&layers=1&nav=1&title=Treasure%20Island%20Conditional.drawio#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1oDe4ehjWZipYRsVfeAx2HyB7LCQ8_Fvi%26export%3Ddownload
+
+#Write your code below this line 👇
+
+print("Keep an eye out for the hungry tiger. If she catches you, you lose.")
+
+option1 = input("You reached a crossroads. Will you go letf or right? Type 'left' or 'right' \n").lower()
+if option1 == "right":
+  print("You fell in a hole. Game over.")
+elif option1 == "left":
+  option2 = input("You reached a lake with an island in the middle. Will you swim across or wait for a boat. Type 'swim' or 'wait' \n").lower()
+  if option2 == "swim":  
+    print("You were attacked by angry crocodiles. game over.")
+  elif option2 == "wait":
+    option3 = input("You made it to the island safely and see a house with three doors, one red, one blue, and one yellow. Which door will you go through? Type 'red', 'blue', or 'yellow' \n")
+    if option3 == "red":
+      print("You entered the room of fire. You can't escape. Game over.")
+    elif option3 == "blue":
+      print("You entered the room of snakes. Game over.")
+    elif option3 == "yellow":
+      print("You entered the treasure room. You win.")
+    else:
+      print("You failed to choose a door and the tiger killed you. Game over.")
+  else:
+    print("You failed to board the boat and the tiger killed you. Game over.")
+else:
+  print("You got lost and the tiger killed you. Game over.")
